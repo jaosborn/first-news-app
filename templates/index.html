@@ -5,7 +5,7 @@
         <h1>Deaths during the L.A. riots</h1>
         <table border=1 cellpadding=7>
             <tr>
-                <th>Name</th>
+                <td>Name</td>
                 <th>Date</th>
                 <th>Type</th>
                 <th>Address</th>
@@ -15,7 +15,7 @@
             </tr>
         {% for obj in object_list %}
             <tr>
-                <td>{{ obj.full_name }}</td>
+                <td><a href="{{ obj.id }}/">{{ obj.full_name }}</a></td>
                 <td>{{ obj.date }}</td>
                 <td>{{ obj.type }}</td>
                 <td>{{ obj.address }}</td>
